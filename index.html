@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body class="bg-dark text-white">
+    <section class="d-flex justify-content-center">
+      <table>
+        <tr class="tr-1">
+          <td>
+            <button
+              onclick="getInput(1)"
+              class="left-btn btn-index-1 game-btn"
+            ></button>
+          </td>
+          <td>
+            <button
+              onclick="getInput(2)"
+              class="middle-btn btn-index-2 game-btn"
+            ></button>
+          </td>
+          <td>
+            <button
+              onclick="getInput(3)"
+              class="right-btn btn-index-3 game-btn"
+            ></button>
+          </td>
+        </tr>
+        <tr class="tr-2">
+          <td>
+            <button
+              onclick="getInput(4)"
+              class="left-btn btn-index-4 game-btn"
+            ></button>
+          </td>
+          <td>
+            <button
+              onclick="getInput(5)"
+              class="middle-btn btn-index-5 game-btn"
+            ></button>
+          </td>
+          <td>
+            <button
+              onclick="getInput(6)"
+              class="right-btn btn-index-6 game-btn"
+            ></button>
+          </td>
+        </tr>
+        <tr class="tr-3">
+          <td>
+            <button
+              onclick="getInput(7)"
+              class="last-left-btn btn-index-7 game-btn"
+            ></button>
+          </td>
+          <td>
+            <button
+              onclick="getInput(8)"
+              class="middle-last-btn btn-index-8 game-btn"
+            ></button>
+          </td>
+          <td>
+            <button onclick="getInput(9)" class="btn-index-9 game-btn"></button>
+          </td>
+        </tr>
+      </table>
+      <div class="d-flex flex-column justify-content-center fs-1 mx-5">
+        <p class="player-1-winning-text" style="display: none">
+          Player 1 Wins <br />
+          Congratulation🎉
+        </p>
+        <p class="player-2-winning-text" style="display: none">
+          Player 2 Wins
+          <br />
+          Congratulations🎉
+        </p>
+        <p class="game-draw-text" style="display: none">
+          The Game is A
+          <br />
+          Draw 🙅‍♂️
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="game-name text-center d-flex flex-column align-items-center">
+        <p class="game-name-text" style="display: none">Tic Tac Toe</p>
+        <button
+          onclick="document.location.reload()"
+          class="btn btn-outline-light w-25"
+          style="display: none"
+        >
+          Reset
+        </button>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

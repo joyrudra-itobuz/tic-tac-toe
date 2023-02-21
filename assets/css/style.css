@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+table {
+  margin: auto;
+  margin-top: 10vh;
+}
+
+tr td button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  width: 10vw;
+  height: 10vw;
+  font-size: 6vw;
+}
+
+.left-btn {
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.middle-btn {
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.right-btn {
+  border-bottom: 5px solid white;
+}
+.middle-last-btn {
+  border-right: 5px solid white;
+}
+.last-left-btn {
+  border-right: 5px solid white;
+}
+
+.game-name p {
+  margin-top: 2rem;
+  font-size: 8rem;
+}
